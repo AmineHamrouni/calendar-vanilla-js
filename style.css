@@ -1,0 +1,63 @@
+body {
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+}
+
+.calendar {
+  margin-bottom: 1rem;
+}
+
+.calendar ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 64em;
+  padding: 0;
+  list-style-type: none;
+}
+
+.calendar ul.calendar-weekdays-grid li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin-left: 0;
+  background-color: #eaeaea;
+  border: 1px solid #eaeaea;
+  height: 12vw;
+  max-height: 125px;
+}
+
+.calendar ul.calendar-weekdays-grid li button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+}
+
+.calendar ul.calendar-weekdays-grid li button.isToday {
+  background: pink;
+}
+
+.calendar ul.calendar-weekdays-grid li button:focus {
+  background: olive;
+}
+
+.calendar ul.calendar-weekdays {
+  margin-bottom: 1em;
+}
+/*# sourceMappingURL=style.css.map */
